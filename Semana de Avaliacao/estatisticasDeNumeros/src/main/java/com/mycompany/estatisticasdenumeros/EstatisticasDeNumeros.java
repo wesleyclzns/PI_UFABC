@@ -7,11 +7,10 @@ public class EstatisticasDeNumeros {
         Scanner entrada = new Scanner(System.in);
         int numEntrada;
         int soma = 0;
-        int acumulador;
         int minimo;
         int maximo;
         int i = 1;
-        double media;
+        double media = 0;
 
         System.out.println("Digite um numero:");
         numEntrada = entrada.nextInt();
@@ -19,8 +18,13 @@ public class EstatisticasDeNumeros {
             soma = soma + i;
             i++;
         }
-        media = (double)soma/i;
-                    System.out.println(media);
-
+        minimo = 0;
+        maximo = numEntrada;
+        media = (double)soma /(double)numEntrada;
+        System.out.println(String.format("%.2f", media));
+        System.out.println(soma);
+        System.out.println(minimo);
+        System.out.println(maximo);
+        entrada.close();
     }
 }
