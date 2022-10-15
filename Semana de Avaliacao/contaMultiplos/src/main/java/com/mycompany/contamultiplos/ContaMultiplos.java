@@ -2,7 +2,6 @@ package com.mycompany.contamultiplos;
 
 import java.util.Scanner;
 
-import javax.swing.text.Style;
 public class ContaMultiplos {
 
     public static void main(String[] args) {
@@ -18,12 +17,10 @@ public class ContaMultiplos {
             
             if (numUsuario % 3 == 0) {
                 multpl3 = multpl3 + 1;
-            } else {
-                if (numUsuario % 5 == 0) {
-                    multpl5 = multpl5 + 1;
-                } else {
-                    
-                }  
+            }
+            
+            if (numUsuario % 5 == 0) {
+                multpl5 = multpl5 + 1;   
             }
 
             System.out.println("Digite + um numero:");
