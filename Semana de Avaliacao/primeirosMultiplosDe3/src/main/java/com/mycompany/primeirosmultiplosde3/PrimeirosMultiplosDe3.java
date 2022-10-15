@@ -17,7 +17,7 @@ public class PrimeirosMultiplosDe3 {
         multi3 = multi3 + 3;
         i++;
        }
-        
+       entrada.close();
         
     }
 }
