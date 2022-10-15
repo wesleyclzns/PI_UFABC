@@ -68,6 +68,6 @@ public class Encriptacao
             {
                 //System.out.print("Valor inválido!");
             }
-    
+    entrada.close();
     }
 }

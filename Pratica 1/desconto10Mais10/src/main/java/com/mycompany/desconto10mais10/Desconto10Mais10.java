@@ -13,6 +13,6 @@ public class Desconto10Mais10 {
         preDesconto = valorProduto - (valorProduto/10);
         desconto = preDesconto - (preDesconto/10);
         System.out.println(desconto);
-
+        entrada.close();
     }
 }

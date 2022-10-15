@@ -31,5 +31,6 @@ public class OperacoesMatematicas {
 
         restoDivisao = dadoA % dadoB;
         System.out.println(restoDivisao);
+        entrada.close();
     }
 }

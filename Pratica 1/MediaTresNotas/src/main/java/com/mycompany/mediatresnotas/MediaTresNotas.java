@@ -17,6 +17,7 @@ public class MediaTresNotas {
        
          
         media = (nota1 + nota2 + nota3)/3;
-        System.out.println("A media das tres notas é: " + media);
+        System.out.println(String.format("%.2f",media));
+        entrada.close();
     }
 }
