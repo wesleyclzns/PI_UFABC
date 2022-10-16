@@ -1,17 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.ordenar3numeros;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class Ordenar3Numeros {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int a, b , c, transf;
+
+        System.out.println("digite um numero");
+        a = entrada.nextInt();
+        System.out.println("digite + um numero");
+        b = entrada.nextInt();
+        System.out.println("digite ++ um numero");
+        c = entrada.nextInt();
+
+        if (a > b) {
+            transf = a;
+            a = b;
+        }
+        if (b > c) {
+            transf = b;
+            b = c;
+        }
+        if (a > c) {
+            transf = a;
+            a = c;
+        }
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
     }
 }
