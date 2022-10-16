@@ -14,19 +14,19 @@ public class RevisaoDiscoVoadores {
         System.out.println("Qual a distancia percorrida do dico voador:");
         distanciaPercorrida = entrada.nextInt();
 
-        if (anoProducao <= 1901 && anoProducao >= 2000 ) {
+        if (anoProducao >= 1901 && anoProducao <= 2000 ) {
             if (codMotor == 100 || codMotor == 101) {
                 System.out.println("SIM");
-            } /* else {
+            } else {
                 System.out.println("NAO");
-            } */
+            }
         } else {
-                if (anoProducao <= 2001 && anoProducao >= 2020) {
+                if (anoProducao >= 2001 && anoProducao <= 2020) {
                     if (distanciaPercorrida > 5000) {
                         System.out.println("SIM");
-                    } /* else {
+                    } else {
                         System.out.println("NAO");
-                    } */
+                    } 
 
                 } else {
                         if (anoProducao == 2021) {
@@ -36,6 +36,8 @@ public class RevisaoDiscoVoadores {
                                     } else {
                                         System.out.println("NAO");
                                     }
+                                }else {
+                                    System.out.println("NAO");
                                 }
                     } else {
                         System.out.println("NAO");
@@ -44,5 +46,6 @@ public class RevisaoDiscoVoadores {
                 }
             
         }        
+        entrada.close();
     }
 }
