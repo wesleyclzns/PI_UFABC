@@ -1,17 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.triangulovalido;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class TrianguloValido {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int lado1, lado2, lado3;
+
+        System.out.println("Digite  tamanho do 1º lado do triangulo");
+        lado1 = entrada.nextInt();
+        System.out.println("Digite  tamanho do 2º lado do triangulo");
+        lado2 = entrada.nextInt();
+        System.out.println("Digite  tamanho do 3º lado do triangulo");
+        lado3 = entrada.nextInt();
+
+        if (lado1 < lado2 + lado3 && lado2 < lado1 + lado3 && lado3 < lado1 + lado2) {
+            System.out.println("VALIDO");
+        } else {
+            System.out.println("INVALIDO");
+        }
+
+        entrada.close();
     }
 }

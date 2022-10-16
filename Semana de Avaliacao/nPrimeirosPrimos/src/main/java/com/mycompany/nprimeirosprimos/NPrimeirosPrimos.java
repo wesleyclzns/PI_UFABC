@@ -1,17 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.nprimeirosprimos;
 
-/**
- *
- * @author clzns
- */
+
+import java.util.Scanner;
 public class NPrimeirosPrimos {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int numeroCiclo, numeroPrimo = 2;
+
+        System.out.println("Digite quantos numeros primos voce quer:");
+        numeroCiclo = entrada.nextInt();
+
+        for (int i = 1; i < numeroCiclo; i++) {
+           
+                System.out.println("Foi");
+        
+            
+        }
+        entrada.close();
     }
 }
