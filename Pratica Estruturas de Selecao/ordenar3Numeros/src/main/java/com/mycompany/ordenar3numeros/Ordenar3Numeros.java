@@ -30,5 +30,6 @@ public class Ordenar3Numeros {
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
+        entrada.close();
     }
 }

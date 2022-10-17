@@ -25,5 +25,6 @@ public class DesempenhoPreditivo {
         System.out.println(String.format("%.2f", acuracia));
         System.out.println(String.format("%.2f", precisao));
         System.out.println(String.format("%.2f", sensibilidade));
+        entrada.close();
     }
 }

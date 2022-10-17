@@ -20,5 +20,6 @@ public class DistanciaEntrePontos {
 
         distancia = Math.sqrt(Math.pow((bX-aX), 2) + Math.pow((bY-aY), 2));
         System.out.println(String.format("%.2f", distancia));
+        entrada.close();
     }
 }
