@@ -1,17 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.pontodentrodoretangulo;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class PontoDentroDoRetangulo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int x, y;
+
+
+        System.out.println("Digite o valor de X:");
+        x = entrada.nextInt();
+        System.out.println("Digite o valor de Y:");
+        y = entrada.nextInt();
+
+        if (x <= 22 && x >= -800) {
+            if (y <= 35 && y >= -20) {
+                System.out.println("SIM");
+            } else {
+                System.out.println("NAO");
+            }
+        } else{
+            System.out.println("NAO");
+        }
+
     }
 }
