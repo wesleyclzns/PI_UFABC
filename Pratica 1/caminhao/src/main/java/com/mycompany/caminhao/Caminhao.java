@@ -1,17 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.caminhao;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class Caminhao {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int capacidade, capA, capB, capC, capD;
+
+        System.out.println("Digite a capacidade do Caminhão: ");
+        capacidade = entrada.nextInt();
+
+        capA = capacidade / 500;
+        capacidade = capacidade % 500;
+        System.out.println(capA);
+
+        capB = capacidade / 100;
+        capacidade = capacidade % 100;
+        System.out.println(capB);
+
+        capC = capacidade / 25;
+        capacidade = capacidade % 25;
+        System.out.println(capC);
+
+        capD = capacidade / 1;
+        capacidade = capacidade % 1;
+        System.out.println(capD);
     }
 }
