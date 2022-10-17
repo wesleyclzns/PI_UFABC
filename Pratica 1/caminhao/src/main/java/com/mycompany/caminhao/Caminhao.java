@@ -25,5 +25,7 @@ public class Caminhao {
         capD = capacidade / 1;
         capacidade = capacidade % 1;
         System.out.println(capD);
+        
+        entrada.close();
     }
 }

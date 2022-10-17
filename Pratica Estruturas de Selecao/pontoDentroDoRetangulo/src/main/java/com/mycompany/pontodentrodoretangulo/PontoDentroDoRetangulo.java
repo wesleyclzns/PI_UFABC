@@ -22,6 +22,6 @@ public class PontoDentroDoRetangulo {
         } else{
             System.out.println("NAO");
         }
-
+        entrada.close();
     }
 }
