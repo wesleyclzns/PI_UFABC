@@ -12,8 +12,10 @@ public class Fibonacci {
 
         for (int i = 0; i < ciclo; i++){
         corrente = ultimo + penultimo;
+        System.out.println(corrente);
         penultimo = ultimo;
         ultimo = corrente;
+
         }
         System.out.println(corrente);
     }

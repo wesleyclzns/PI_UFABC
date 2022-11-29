@@ -1,17 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.jogodopim;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class JogoDoPIM {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int i = 1;
+        int j = 0;
+        System.out.println("Digite um numero inteiro");
+        int numeroPim = entrada.nextInt();
+
+        while (j < numeroPim) {
+            if (i % 4 != 0) {
+                System.out.print(i + " ");
+            } else {
+                System.out.print("PIM");
+                System.out.println("");
+                j++;
+            }
+            i++;
+        }
     }
 }
