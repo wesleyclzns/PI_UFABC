@@ -1,5 +1,6 @@
 package com.mycompany.somadoisvalores;
 
+import java.util.Scanner;
 public class SomaDoisValores {
 
     public static void main(String[] args) {
