@@ -20,5 +20,6 @@ public class JogoDoPIM {
             }
             i++;
         }
+        entrada.close();
     }
 }
