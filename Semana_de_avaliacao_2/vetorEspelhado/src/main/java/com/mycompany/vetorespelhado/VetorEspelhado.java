@@ -1,17 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.vetorespelhado;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class VetorEspelhado {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite quantos espaços vc quer");
+        int tamanho = entrada.nextInt();
+        int vetor[] = new int [tamanho];
+        int contSim =0;
+        int contNAO =0;
+        
+        for (int i = 0; i < tamanho; i++) {
+            System.out.println("Digite um numero");
+            vetor[i] = entrada.nextInt();
+        }
+
+        int metade = (tamanho/2);
+        for (int i = 0; i < metade; i++) {
+            if (vetor[i] == vetor[tamanho-1]) {
+                contSim++;
+            }else{
+                contNAO++;
+            }
+        }
+
+        if (contSim == metade) {
+            System.out.println("SIM");
+        } else {
+            System.out.println("NAO");
+        }
+
+        entrada.close();
     }
 }
+
