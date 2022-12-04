@@ -1,17 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.numeronavertical;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
 public class NumeroNaVertical {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        int index = 0;
+        int inteiro[] = new int [index];
+        
+        System.out.println("Digite um numero interiro");
+        int numeroDig = entrada.nextInt();
+        String s = Integer.toString(numeroDig);
+
+        while (index < s.length()) {
+            inteiro[index] = numeroDig
+            index++;
+        }
+
+
+
     }
 }
