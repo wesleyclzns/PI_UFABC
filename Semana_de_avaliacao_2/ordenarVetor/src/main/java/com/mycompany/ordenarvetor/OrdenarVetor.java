@@ -1,17 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.ordenarvetor;
 
-/**
- *
- * @author clzns
- */
+import java.util.Scanner;
+import java.util.Arrays;
 public class OrdenarVetor {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        
+        Scanner entrada = new Scanner(System.in);
+        int nEspacos = 0;
+        
+
+        System.out.println("Digite a quantidade de numeros a serem inseridos: ");
+        nEspacos = entrada.nextInt();
+
+        int vetor [] = new int [nEspacos];
+        
+        for (int i = 0; nEspacos > i; i++) {
+            System.out.println("Digite um Numero: ");
+            vetor[i] = entrada.nextInt();
+        }
+
+         Arrays.sort(vetor);
+         for (int i : vetor) {
+			System.out.print(i+" ");
+		}
+
+        entrada.close();
     }
 }
