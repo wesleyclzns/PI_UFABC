@@ -26,5 +26,6 @@ public class QuantidadeDeParesEImpares {
         }
         System.out.println(contI);
         System.out.println(contP);
+        entrada.close();
     }
 }
