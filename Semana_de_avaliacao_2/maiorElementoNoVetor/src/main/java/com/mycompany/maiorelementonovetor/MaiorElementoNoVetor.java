@@ -17,7 +17,7 @@ public class MaiorElementoNoVetor {
             System.out.println("Digite um Numero: ");
             vetor[i] = entrada.nextInt();
         }
-        for (i = 0; i < nCiclos; i++) {
+        for (int i = 0; i < nCiclos; i++) {
             if (vetor[i] > maior) {
                 maior = vetor[i];
             }
