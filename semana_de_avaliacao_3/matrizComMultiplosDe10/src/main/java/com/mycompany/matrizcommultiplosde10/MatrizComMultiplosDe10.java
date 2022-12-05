@@ -12,9 +12,7 @@ public class MatrizComMultiplosDe10 {
         System.out.println("Digite a quantidade de numeros de colunas ");
         int colunas = entrada.nextInt();
         int validador = 0;
-        int matrizT3 [][] = {{40,30,20,10},{10,20,30,40},{20,50,90,20}};
-        int matrizT4 [][] = {{30,20,10},{10,20,30},{50,90,20},{40,50,60}};
-
+        
         int matriz[][] = new int [linhas][colunas];
         
         for (int l = 0; l < linhas; l++) {
