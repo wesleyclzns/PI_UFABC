@@ -13,11 +13,7 @@ public class ComparaMatrizes {
                         if (matriz2[i][j] == matriz1[i][j]*2) {
                             matriz = true;
                         } else{
-                            if (matriz2[i][j] == matriz1[i][j]) {
-                                matriz = false;
-                            } else {
-                                matriz = false;
-                            }
+                            matriz = false;
                         }
                     }
                 }
